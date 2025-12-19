@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB Companion - Dragonbane Android App</title>
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --dark-bg: #1a1a1a;
+            --card-bg: #2a2a2a;
+            --text-light: #e0e0e0;
+            --accent: #8b0000;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 4px solid var(--primary-gold);
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: var(--primary-gold);
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 800px) {
+            .container { grid-template-columns: 1fr; }
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 5px solid var(--primary-gold);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            color: var(--primary-gold);
+            border-bottom: 1px solid var(--primary-gold);
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '🛡️';
+            position: absolute;
+            left: 0;
+        }
+
+        .legal {
+            grid-column: 1 / -1;
+            font-size: 0.85rem;
+            margin-top: 40px;
+            padding: 20px;
+            background: #111;
+            border: 1px dashed #444;
+            color: #aaa;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary-gold);
+            color: #000;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background: #d4b475;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="index-header.jpg">
+    <h1>DB Companion</h1>
+    <p style="font-style: italic; color: #ccc;">Your digital journey into the Misty Vale begins here.</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Master the Adventure (EN)</h2>
+        <p>Elevate your <strong>Dragonbane</strong> experience with the ultimate digital companion for Android. Focus on the story and the rolls, while we handle the tracking.</p>
+
+        <ul>
+            <li><strong>Hero Creation:</strong> Build your character from scratch in minutes.</li>
+            <li><strong>Complete Tracking:</strong> Real-time management of HP, Willpower (WP), and Conditions.</li>
+            <li><strong>Smart Dice Logic:</strong> Instant calculation of <em>Banes</em> and <em>Boons</em> for every skill and weapon.</li>
+            <li><strong>Inventory & Load:</strong> Automated encumbrance calculation so you're never slowed down unexpectedly.</li>
+            <li><strong>Spellbook:</strong> A complete grimoire to manage your magical powers and casting costs.</li>
+        </ul>
+        <a href="https://play.google.com/store/apps/details?id=io.github.fvasco.dbcompanion" class="btn">Download for Android</a>
+    </section>
+
+    <section>
+        <h2>Bemästra Äventyret (SV)</h2>
+        <p>Förhöj din <strong>Drakar och Demoner</strong>-upplevelse med den ultimata digitala följeslagaren för Android. Fokusera på berättelsen och tärningarna, så sköter vi siffrorna.</p>
+
+        <ul>
+            <li><strong>Skapa Hjälte:</strong> Bygg din karaktär från grunden på bara några minuter.</li>
+            <li><strong>Fullständig Kontroll:</strong> Hantering av HP, Viljepoäng (VP) och tillstånd i realtid.</li>
+            <li><strong>Smart Tärningslogik:</strong> Automatisk beräkning av <em>Nackdelar</em> och <em>Fördelar</em> för alla färdigheter och vapen.</li>
+            <li><strong>Utrustning & Belastning:</strong> Automatisk beräkning av bärförmåga så att du alltid har koll på vikten.</li>
+            <li><strong>Grimaltarium:</strong> En komplett trollformelsbok för att hantera dina magiska krafter och kostnader.</li>
+        </ul>
+        <a href="https://play.google.com/store/apps/details?id=io.github.fvasco.dbcompanion" class="btn">Ladda ner till Android</a>
+    </section>
+
+    <div class="legal">
+        <p>This game is not affiliated with, sponsored, or endorsed by Fria Ligan AB. This Supplement was created under Fria Ligan AB’s Dragonbane Third Party Supplement License.</p>
+        <hr style="border-color: #333;">
+        <p>DoD Kompanion är en oberoende publikation och har ingen koppling till Fria Ligan AB. Den är publicerad under tredjepartslicensen för Drakar och Demoner (version 1.0). Drakar och Demoner och Ereb Altor är registrerade varumärken tillhörande Fria Ligan AB.</p>
+    </div>
+</div>
+
+</body>
+</html>
