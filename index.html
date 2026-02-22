@@ -68,6 +68,12 @@
             padding-bottom: 10px;
         }
 
+        a {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+        }
+
         ul {
             list-style: none;
             padding: 0;
@@ -158,9 +164,17 @@
         <a href="https://play.google.com/store/apps/details?id=io.github.fvasco.dbcompanion" class="btn">Ladda ner till Android</a>
     </section>
 
-    <center>
-        <a href="https://www.paypal.com/donate/?hosted_button_id=G9TYY7SSC3KPQ"><img src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif"></a>
-    </center>
+    <div>
+    Contact me:
+    <span id=mail></span>
+    &nbsp;
+    <a href="https://www.paypal.com/donate/?hosted_button_id=G9TYY7SSC3KPQ"><img src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" style="vertical-align:top"></a>
+    <script>
+        const domain = "yahoo.it";
+        const user = "fsco_v-github";
+        document.getElementById("mail").innerHTML = `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
+    </script>
+    </div>
 
     <div class="legal">
         <p>This game is not affiliated with, sponsored, or endorsed by Fria Ligan AB. This Supplement was created under Fria Ligan AB’s Dragonbane Third Party Supplement License.</p>
